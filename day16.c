@@ -133,14 +133,32 @@
 //}
 
 
-//调用另一个文件中的函数，add.c, add.h；  函数定义放在add.c中，函数声明放在add.h中；
-#include"add.h"
+////调用另一个文件中的函数，add.c, add.h；  函数定义放在add.c中，函数声明放在add.h中；
+//#include"add.h"
+//int main()
+//{
+//    int a=10;
+//    int b=10;
+//    int sum=add(a,b);
+//    printf("%d",sum);
+//    return 0;
+//}
+
+
+
+
+void print(unsigned int n)
+{
+    if(n>9)
+    {
+        print(n/10);
+    }
+    printf("%d ",n%10);
+}
 int main()
 {
-    int a=10;
-    int b=10;
-    int sum=add(a,b);
-    printf("%d",sum);
+    unsigned int num=1234;
+    print(num);
     return 0;
 }
 
