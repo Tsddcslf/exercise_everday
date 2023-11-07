@@ -146,6 +146,7 @@
 
 
 
+//ตÝน้
 
 void print(unsigned int n)
 {
